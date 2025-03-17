@@ -1,70 +1,3 @@
-// import Header from "./components/Header";
-// import Footer from "./components/Footer";
-// import { useAppContext } from "./contexts/appContext";
-// import NFTCard from "./components/NFTCard";
-// import useMintToken from "./hooks/useMintToken";
-
-// function App() {
-//     const { nextTokenId, tokenMetaData, mintPrice } = useAppContext();
-
-//     console.log("nextTokenId: ", nextTokenId);
-
-//     const tokenMetaDataArray = Array.from(tokenMetaData.values());
-//     const mintToken = useMintToken();
-
-//     return (
-//         <div>
-//             <Header />
-//             <main className="h-full min-h-[calc(100vh-128px)] p-4">
-//                 <div className="text-center">
-//                     <h1 className="text-3xl font-bold">NFT dApp</h1>
-//                     <p className="text-primary font-medium">
-//                         Mint and manage your NFTs
-//                     </p>
-//                 </div>
-
-//                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4  mt-6">
-//                     <div className="border-l-2 border-primary p-4">
-//                         <h1 className="text-xl font-bold">Mint NFT</h1>
-//                         <p className="text-gray-500">
-//                             Mint your NFT and make it available for sale
-//                         </p>
-//                     </div>
-//                     <div className="border-l-2 border-primary p-4">
-//                         <h1 className="text-xl font-bold">Manage NFTs</h1>
-//                         <p className="text-gray-500">
-//                             View and manage your minted NFTs
-//                         </p>
-//                     </div>
-//                     <div className="border-l-2 border-primary p-4">
-//                         <h1 className="text-xl font-bold">Marketplace</h1>
-//                         <p className="text-gray-500">
-//                             Buy and sell NFTs on the marketplace
-//                         </p>
-//                     </div>
-//                 </div>
-
-//                 <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
-//                     {tokenMetaDataArray.map((token, i) => (
-//                         <NFTCard
-//                             key={token.name.split(" ").join("")}
-//                             metadata={token}
-//                             mintPrice={mintPrice}
-//                             tokenId={i}
-//                             nextTokenId={nextTokenId}
-//                             mintNFT={mintToken}
-//                         />
-//                     ))}
-//                 </div>
-//             </main>
-//             <Footer />
-//         </div>
-//     );
-// }
-
-// export default App;
-
-
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { useAppContext } from "./contexts/appContext";
@@ -78,7 +11,7 @@ function App() {
   const mintToken = useMintToken();
 
   return (
-    <div className="bg-[#0a0e17] text-white min-h-screen">
+    <div className="bg-[black] text-white min-h-screen">
       <main className="container mx-auto px-4 py-8">
         {/* Hero Section */}
         <div className="flex flex-col items-center justify-center py-16 mb-12 relative">
@@ -88,7 +21,7 @@ function App() {
             Discover, collect, and trade unique digital assets on the blockchain
           </p>
           <div className="flex gap-4 mt-8">
-            <button className="px-6 py-3 bg-gradient-to-r from-[#6e4aff] to-[#399EEA] rounded-lg font-bold hover:opacity-90 transition">
+            <button className="px-6 py-3 bg-gradient-to-r from-[#6e4aff] to-[#399EEA] rounded-lg font-bold hover:opacity-80 transition">
               Explore Collection
             </button>
             <button className="px-6 py-3 bg-transparent border border-[#399EEA] rounded-lg font-bold hover:bg-[#399EEA]/10 transition">
@@ -204,3 +137,87 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import Header from "./components/Header";
+// import Footer from "./components/Footer";
+// import { useAppContext } from "./contexts/appContext";
+// import NFTCard from "./components/NFTCard";
+// import useMintToken from "./hooks/useMintToken";
+
+// function App() {
+//     const { nextTokenId, tokenMetaData, mintPrice } = useAppContext();
+
+//     console.log("nextTokenId: ", nextTokenId);
+
+//     const tokenMetaDataArray = Array.from(tokenMetaData.values());
+//     const mintToken = useMintToken();
+
+//     return (
+//         <div>
+//             <Header />
+//             <main className="h-full min-h-[calc(100vh-128px)] p-4">
+//                 <div className="text-center">
+//                     <h1 className="text-3xl font-bold">NFT dApp</h1>
+//                     <p className="text-primary font-medium">
+//                         Mint and manage your NFTs
+//                     </p>
+//                 </div>
+
+//                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4  mt-6">
+//                     <div className="border-l-2 border-primary p-4">
+//                         <h1 className="text-xl font-bold">Mint NFT</h1>
+//                         <p className="text-gray-500">
+//                             Mint your NFT and make it available for sale
+//                         </p>
+//                     </div>
+//                     <div className="border-l-2 border-primary p-4">
+//                         <h1 className="text-xl font-bold">Manage NFTs</h1>
+//                         <p className="text-gray-500">
+//                             View and manage your minted NFTs
+//                         </p>
+//                     </div>
+//                     <div className="border-l-2 border-primary p-4">
+//                         <h1 className="text-xl font-bold">Marketplace</h1>
+//                         <p className="text-gray-500">
+//                             Buy and sell NFTs on the marketplace
+//                         </p>
+//                     </div>
+//                 </div>
+
+//                 <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
+//                     {tokenMetaDataArray.map((token, i) => (
+//                         <NFTCard
+//                             key={token.name.split(" ").join("")}
+//                             metadata={token}
+//                             mintPrice={mintPrice}
+//                             tokenId={i}
+//                             nextTokenId={nextTokenId}
+//                             mintNFT={mintToken}
+//                         />
+//                     ))}
+//                 </div>
+//             </main>
+//             <Footer />
+//         </div>
+//     );
+// }
+
+// export default App;
