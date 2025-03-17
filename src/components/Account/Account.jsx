@@ -4,6 +4,11 @@ import NFTCard from "../NFTCard";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+
+
+
+
+
 const Account = () => {
   const { userNFTs, tokenMetaData, mintPrice, nextTokenId, transferNfts } = useAppContext();
   const { address: userAddress, isConnected } = useAccount();
@@ -20,7 +25,7 @@ const Account = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      {/* Back Button */}
+      {/*...................................... Back Button......................... */}
       <div className="mb-6">
         <button 
           onClick={handleBackToDashboard}

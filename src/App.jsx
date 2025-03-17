@@ -1,4 +1,4 @@
-import Header from "./components/Header";
+// import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { useAppContext } from "./contexts/appContext";
 import NFTCard from "./components/NFTCard";
@@ -11,9 +11,9 @@ function App() {
   const mintToken = useMintToken();
 
   return (
-    <div className="bg-[black] text-white min-h-screen">
+    <div className="bg-[white] text-white min-h-screen">
       <main className="container mx-auto px-4 py-8">
-        {/* Hero Section */}
+        {/*............................ Idealz Section..................................... */}
         <div className="flex flex-col items-center justify-center py-16 mb-12 relative">
           <div className="absolute inset-0 bg-gradient-to-r from-[#6e4aff] to-[#399EEA] opacity-10 blur-3xl rounded-full"></div>
           <h1 className="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#6e4aff] to-[#389EEA] mb-4">IDEALZ NFT</h1>
@@ -24,13 +24,13 @@ function App() {
             <button className="px-6 py-3 bg-gradient-to-r from-[#6e4aff] to-[#399EEA] rounded-lg font-bold hover:opacity-80 transition">
               Explore Collection
             </button>
-            <button className="px-6 py-3 bg-transparent border border-[#399EEA] rounded-lg font-bold hover:bg-[#399EEA]/10 transition">
+            <button className="px-6 py-3 bg-transparent border border-[#399EEA] rounded-lg font-bold hover:bg-[#399EEA]/10 transition text-black">
               Connect Wallet
             </button>
           </div>
         </div>
 
-        {/* Features Section */}
+        {/*........................................... Features Section.......................................... */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           <motion.div 
             whileHover={{ scale: 1.02 }}

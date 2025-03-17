@@ -7,7 +7,7 @@ const NFTCard = ({ metadata, mintPrice, tokenId, nextTokenId, mintNFT, transferN
     
     return (
         <div className="rounded-lg overflow-hidden bg-gray-800 shadow-md hover:shadow-xl transition-all duration-300 border border-purple-900">
-            {/* NFT Image Container */}
+            {/*..................................... NFT Image Container......................................... */}
             <div className="relative">
                 <img
                     src={metadata.image}
